@@ -24,5 +24,7 @@ print("The value of {} is ten, the value of {} is a decimal, and the value of {}
 
 # Finally, print the same thing using an f-string
 # SyntaxError: invalid syntax why?
+# It dons't run when you click on the VSCode run button
+# It runs fine when you run it in the terminal $python3 filename.py
 print(
     f"The value of {x} is ten, the value of {y} is a decimal, and the value of '{z}' is <3 turtles.")
