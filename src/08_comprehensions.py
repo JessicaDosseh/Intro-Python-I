@@ -8,34 +8,45 @@ Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-compr
 for more info regarding list comprehensions.
 """
 
+"""
+Note to self this is something you definetly need to go over again.
+"""
+
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
 
-y = []
+y = [num for num in range(1, 6)]
 
-print (y)
+print(y)
 
 # Write a list comprehension to produce the cubes of the numbers 0-9:
 # [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 
-y = []
+y = [num ** 3 for num in range(0, 10)]
 
 print(y)
+
 
 # Write a list comprehension to produce the uppercase version of all the
 # elements in array a. Hint: "foo".upper() is "FOO".
 
 a = ["foo", "bar", "baz"]
 
-y = []
+y = [word.upper() for word in a]
 
 print(y)
+
 
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
+"""
+Note: this does not run in VSCode but it does run when you
+run the command directly in the terminal
+$ python3 08_comprehensions.py
+"""
 
 # What do you need between the square brackets to make it work?
-y = []
+y = [num for num in x if int(num) % 2 == 0]
 
 print(y)
